@@ -1,6 +1,7 @@
 import Navbar from './Components/Navbar';
 import './App.css';
 
+
 // The website must have the following pages: 
 // Home Page (Static): Working slider (does not have to be the hero, can be anywhere on the home page)
 // Products Page (React): 12 products with a working filter rendered from your Database. Each product should have a title, description, price, and image that is rendered from your Database
