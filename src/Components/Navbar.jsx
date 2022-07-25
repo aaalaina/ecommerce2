@@ -1,6 +1,6 @@
 //rfce vs frc
 import React from 'react';
-import '../App.css';
+import './App.css';
 
 function navbar() {
   return (
