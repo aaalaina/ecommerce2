@@ -1,5 +1,10 @@
 import Navbar from './Components/Navbar';
+import Home from './Pages/Home';
+import Products from './Pages/Products';
+import Contact from './Pages/Contact';
+import FAQ from './Pages/FAQ';
 import './App.css';
+import Footer from './Components/Footer';
 
 
 // The website must have the following pages: 
@@ -14,11 +19,27 @@ import './App.css';
 
 
 function App() {
+  let page; 
+  if (window.location.pathname === "/") {
+    page = <Home />;
+  }
+  else if (window.location.pathname === "/Products") {
+   page = <Products />;
+  }
+  else if (window.location.pathname === "/Contact") {
+    page = <Contact />;
+  }
+  else if (window.location.pathname === "/FAQ") {
+    page = <FAQ />;
+  }
+
   return (
     <div className="App">
        <Navbar />
-      
+       {page}
+       <Footer />
     </div>
+    
   );
 }
 
