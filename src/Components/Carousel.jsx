@@ -18,7 +18,7 @@ export default function Carousel() {
                 {images.map(image =>{
                     return (
                         <motion.div className='item' key={image}>
-                            <img src={image} alt="" />
+                            <img src={image} alt='' />
                         </motion.div>
                     )
                 })}

@@ -16,7 +16,7 @@ function navbar() {
                 <button onClick={() => window.location.pathname = "/"}><a href="/">home</a></button>
                 <button onClick={() => window.location.pathname = "/Products"}><a href="/Products">shop</a></button>
                 <button onClick={() => window.location.pathname = "/Contact"}><a href="/Contact">contact us</a></button>
-                <button onClick={() => window.location.pathname = "/FAQ"}><a href="/FAQ">Questions</a></button>
+                <button onClick={() => window.location.pathname = "/FAQ"}><a href="/FAQ">faq</a></button>
           </div>
         </div>
     </div>

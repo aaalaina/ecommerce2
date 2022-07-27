@@ -7,13 +7,13 @@ const Plushies = () => {
     const [prod, setProd] = useState([])
     useEffect(() => {
         Axios.get('https://fuwafuwapets.herokuapp.com/ProductList').then((response) => {
-            /*console.log(response)*/
+            
             setProd(response.data)
         })
     }, []) 
     const filterAlpha = () => {
     Axios.get('https://fuwafuwapets.herokuapp.com/productsInA').then((response) => {
-        /*console.log(response)*/
+        
         setProd(response.data)
     })
 }
@@ -23,28 +23,37 @@ const onChange = e => {
     }
 }
 
+
+
     return (
+
+       
         <div className="Products">
-                <select name="order by.." id="menuName" onChange={onChange}>
-                    <option value='alphabet'>Alphabetically</option>
+            <div>
+                <select name="order by" id="menuName" onChange={onChange}>
+                    <label value='menu'>menu</label>
+                    <option value='alphabet'>Alphabetical Order</option>
+                    <option value='ascend'>Low To High</option>
+                    <option value='descend'>High To Low</option>
                 </select>
- 
+                </div>
             {prod.map((value, key) => {
                 return (
  
- 
- 
-                    <div className="card">
-                        <div className="card-img">
-                            <img src={`${value.plushimg}`} alt="products" />
- 
-                    
-                            </div>
+                   
+                <div className='flex-container'>
+                    <div className="flex-items">
+                        <div className='cardContainer'>
+                            <img className= "plushimg" src={`${value.plushimg}`} alt="stuffed plushie" />
+                           
+                        {/* <h1>{value.idproducts}</h1> */}
                        <h2>{value.plushname}</h2>
-                       <p>{value.plushdescr}</p>
+                       <p><big>{value.plushdescr}</big></p>
                        <p className="price">${value.plushprice}</p>
-                       <button>Add to cart</button>
+                       <button className='cartbutton'>Add to cart</button>
+                       </div>
                    </div>
+                </div>
                )
            })}
        </div>
