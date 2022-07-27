@@ -34,10 +34,10 @@ const submit = () => {
 }
     
   return (
-    <div id='contact-form'>
-       <input type='text' placeholder="What's your name?" value={name} onChange={e => setName(e.target.value)}/>
-       <input type='email' placeholder="What's your email?" value={email} onChange={e => setEmail(e.target.value)}/>
-       <textarea textarea='Send us a message!' value ={message} onChange={e => setMessage(e.target.value)}/>
+    <div className='contact-form'>
+       <input type='text' className='inputs' placeholder="What's your name?" value={name} onChange={e => setName(e.target.value)}/>
+       <input type='email'className='inputs' placeholder="What's your email?" value={email} onChange={e => setEmail(e.target.value)}/>
+       <textarea textarea='Send us a message!' className='textareainput' value ={message} onChange={e => setMessage(e.target.value)}/>
        <button onClick={submit}>Send Message</button>
        <span className={emailSent ? 'visible' : null}>Thanks so much! Talk to you soon!</span>
         

@@ -45,6 +45,25 @@ display: flex;
   font-size: medium;
 }
 
+/* buttons */
+.Navbar button{
+  background-color: #b34700;
+  color: white;
+  border-radius: 2rem;
+  margin: 10px;
+  border: none;
+  font-size: 2rem;
+  padding-right: 5px;
+}
+.Navbar button:active{
+  color: white;
+}
+
+/* a */
+.Navbar button:visited{
+  color: white;
+}
+
 /* carousel */
 .item{
   min-height: 40rem;
@@ -163,3 +182,37 @@ display: grid;
   }
 
   /* Contact Form */
+  .contact-form{
+    width: 33%;
+    height: 500px;
+    background-color: lightblue;
+    box-shadow: 0 0 20px 0 rgb(254, 253, 253);
+   
+    /* transform: translate(-50%, -50%); */
+    position: relative;
+    margin: auto;
+
+  }
+
+  .contact-form .inputs{
+    width: 80%;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+  }
+  .textareainput{
+    border-radius: 2rem;
+    margin-top: 10px;
+    border: none;
+    width: 84%;
+    height: 217px;
+    top: 10px;
+  }
+
+  .contact-form button{
+  border: none;
+  }
