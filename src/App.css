@@ -348,13 +348,15 @@ display: grid;
   /* Contact Form */
   .contact-form{
     width: 33%;
-    height: 100vh;
+    height: 70vh;
     background-color: lightblue;
     box-shadow: 0 0 20px 0 rgb(254, 253, 253);
     /* transform: translate(-50%, -50%); */
     position: relative;
     margin: auto;
-    
+    border-radius: 12%;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
   .contact-form span {
     display: none;
